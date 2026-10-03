@@ -1,0 +1,39 @@
+# Local build products and evidence
+target/
+releases/
+.runs/
+reports/
+.work/
+__pycache__/
+*.pyc
+# Terraform caches, state, saved plans and private values
+.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+application_default_credentials.json
+.azure/
+.aws/
+.config/gcloud/
+settings.xml
+# IDE and system files
+.idea/
+.vscode/
+.DS_Store
+*.iml
